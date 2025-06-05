@@ -1,17 +1,18 @@
 
 import './App.css'
-import HomeLayout from './Layouts/HomeLayout'
+import HomePage from './Pages/HomePage.jsx'
 import { Routes, Route } from 'react-router-dom'
-import Footer from './Components/Footer'
-import Navbar from './Components/Navbar'
+
 
 function App() {
   
 
   return (
     <>
-   <HomeLayout/>
+    <Routes>
+    <Route path = "/" element = {<HomePage/>} ></Route>
     
+   </Routes>
     </>
   )
 }
