@@ -6,11 +6,11 @@ const initialState = {
     data: localStorage.getItem('data') || { }
 };
 
-const authslice = createSlice({
+const authSlice = createSlice({
     name: "authSlicer",
     initialState,
     reducer:{}
 })
 
-export const {} = authSlices.actions;
-export default authslice.reducer;
+export const {} = authSlice.actions;
+export default authSlice.reducer;
