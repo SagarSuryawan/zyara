@@ -15,7 +15,7 @@ function Navbar() {
       <div className="w-full max-w-screen-xl mx-auto px-8 py-2 flex flex sm:flex-row justify-between items-center gap-4 sm:gap-0">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img src={NavbarLogo} alt="navbarLogo" className="w-24 h-24 sm:w-24 sm:h-24 rounded-full" />
+          <img src={NavbarLogo} alt="navbarLogo" className="w-20 h-20 sm:w-15 sm:h-15 rounded-full" />
         </div>
 
         {/* Search Bar */}

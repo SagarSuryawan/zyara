@@ -1,5 +1,6 @@
 import HomeLayout from "../Layouts/HomeLayout"
 import { MdCurrencyRupee } from "react-icons/md";
+import CardCarousal from "../Components/BrandCarousal";
 // import images for category
 import mensFashion from "../assets/homePage/MensFashion.jpg"
 import  womensFashion from "../assets/homePage/womensFashion.jpg"
@@ -12,6 +13,14 @@ import  shorts from "../assets/homePage/shorts.jpg"
 import  brands from "../assets/homePage/brands.jpg"
 import  newArrivals from "../assets/homePage/newArrivals.jpg"
 import  banner from "../assets/homePage/banner.jpg"
+
+const images = [
+    { src: Highlander, alt: "Highlander" },
+    { src: Hoop, alt: "Hoop" },
+    { src: ketch, alt: "Ketch" },
+    { src: tokiyotalkies, alt: "Tokyo Talkies" },
+    { src: vishudh, alt: "Vishudh" },
+  ]
 
 function HomePage() {
     return (
@@ -43,10 +52,10 @@ function HomePage() {
         {item.label}
       </p>
       {item.dropdown && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 bg-white border border-red-800 shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 w-40">
+        <div className="bg-[#106EBE] absolute left-1/2 -translate-x-1/2 top-full mt-2  border border-red-800 shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 w-40">
           <ul className="text-sm text-gray-700">
             {item.dropdown.map((dItem, i) => (
-              <li key={i} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <li key={i} className="px-4 py-2 hover:underline hover:text-white cursor-pointer text-[#0FFCBE]">
                 {dItem}
               </li>
             ))}
@@ -76,6 +85,8 @@ function HomePage() {
 <h1 className="text-center text-lg sm:text-xl font-medium tracking-widest my-6 hover:text-black hover:underline transition duration-300">
   SHOP BY BRANDS
 </h1>
+<CardCarousal images={images}/>
+
 
 {/* Top Collab */}
 <h1 className="text-center text-lg sm:text-xl font-medium tracking-widest my-6 hover:text-black hover:underline transition duration-300">
