@@ -61,10 +61,10 @@ function HomePage() {
 <div className="banner my-10 w-[95%] mx-auto">
   <div className="relative cursor-pointer">
     <img src={banner} alt="banner" className="w-full max-h-[450px] object-cover rounded-lg shadow-xl" />
-    <div className="absolute top-6 left-6 sm:top-10 sm:left-12 bg-[#FFB5C0] p-4 rounded-md shadow-md max-w-xs">
-      <h1 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#330F14]">GET EXTRA <br /> 10% OFF</h1>
-      <span className="text-[#66323A]">ON SHOPPING FOR</span>
-      <div className="mt-2 flex items-center">
+    <div className=" absolute top-10 left-24 bg-[#FFB5C0] p-4 rounded-md shadow-md max-w-xs md:w-[250px] md:h-[150px] lg:h-[200px] lg:w-[300px] lg:left-1/5 text-center p-5 md:top-1/4">
+      <h1 className="text-2xl lg:text-4xl font-bold text-[#330F14] text-center">GET EXTRA <br /> 10% OFF</h1>
+      <span className="text-[#66323A] text-[12px] text-center">ON SHOPPING FOR</span>
+      <div className=" flex items-center justify-center">
         <MdCurrencyRupee className="text-[#66323A] text-xl sm:text-2xl" />
         <span className="text-xl sm:text-3xl text-black font-semibold ml-1">2499</span>
       </div>
@@ -89,9 +89,9 @@ function HomePage() {
     alt="for him and her"
     className="w-full rounded-md"
   />
-  <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-4">
-    <button className="bg-[#A3A3A3] px-4 py-2 rounded text-black font-medium">HIM</button>
-    <button className="bg-[#A3A3A3] px-4 py-2 rounded text-black font-medium">HER</button>
+  <div className="absolute bottom-2 left-1/2  -translate-x-1/2 flex gap-4">
+    <button className="bg-[#A3A3A3] px-2 py-1 lg:px-4 lg:py-2 rounded text-black font-medium">HIM</button>
+    <button className="bg-[#A3A3A3] px-2 py-1 lg:px-4 lg:py-2 rounded text-black font-medium">HER</button>
   </div>
 </div>
 
