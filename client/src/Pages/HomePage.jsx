@@ -1,6 +1,7 @@
 import HomeLayout from "../Layouts/HomeLayout"
 import { MdCurrencyRupee } from "react-icons/md";
 import BrandCarousal from "../Components/BrandCarousal";
+import CardCarousal from "../Components/CardCarosel";
 // import images for category
 import mensFashion from "../assets/homePage/MensFashion.jpg"
 import  womensFashion from "../assets/homePage/womensFashion.jpg"
@@ -99,6 +100,7 @@ function HomePage() {
 <h1 className="text-center text-lg sm:text-xl font-medium tracking-widest my-6 hover:text-black hover:underline transition duration-300">
   TOP COLLAB
 </h1>
+<CardCarousal />
 
 {/* For Him and Her */}
 <div className="relative w-[95%] mx-auto mt-10">
