@@ -1,7 +1,7 @@
-
+import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import BrandImages from '../constant/collabbrand';
+
 
 
 function BrandCarousal({ images}) {
@@ -12,7 +12,7 @@ function BrandCarousal({ images}) {
         <div className="embla__container flex">
           {images.map((img, index) => (
             <div key={index} className="embla__slide flex-none w-full min-w-0">
-              <img src={img.src} alt={img.alt || `slide-${index}`} className="w-[90%] m-auto rounded-md" />
+              <img src={img.src} alt={img.alt || `slide-${index}`} className="w-[95%] m-auto rounded-md" />
             </div>
           ))}
         </div>

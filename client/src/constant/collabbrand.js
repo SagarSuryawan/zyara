@@ -1,4 +1,4 @@
- const BrandImages = [
+ const CardImages = [
     {
         id:1,
         img:"https://pictures.kartmax.in/live/original/0x0/sites/aPfvUDpPwMn1ZadNKhP7/theme/DCMen-99749a86-8ffb-4260-b003-bb7f9f48d8cf.jpg"
@@ -29,4 +29,4 @@
     }
   ]
 
-  export default BrandImages;
+  export default CardImages;

@@ -1,6 +1,6 @@
 import HomeLayout from "../Layouts/HomeLayout"
 import { MdCurrencyRupee } from "react-icons/md";
-import CardCarousal from "../Components/BrandCarousal";
+import BrandCarousal from "../Components/BrandCarousal";
 // import images for category
 import mensFashion from "../assets/homePage/MensFashion.jpg"
 import  womensFashion from "../assets/homePage/womensFashion.jpg"
@@ -14,11 +14,18 @@ import  brands from "../assets/homePage/brands.jpg"
 import  newArrivals from "../assets/homePage/newArrivals.jpg"
 import  banner from "../assets/homePage/banner.jpg"
 
+
+import Highlander from "../assets/BrandCarouselImages/Highlander.webp";
+import Hoop from "../assets/BrandCarouselImages/Hoop.webp";
+import ketch from "../assets/BrandCarouselImages/Ketch.webp";
+import TokyoTalkies from "../assets/BrandCarouselImages/TokyoTalkies.webp"
+import vishudh from "../assets/BrandCarouselImages/vishudh.webp";
+
 const images = [
     { src: Highlander, alt: "Highlander" },
     { src: Hoop, alt: "Hoop" },
     { src: ketch, alt: "Ketch" },
-    { src: tokiyotalkies, alt: "Tokyo Talkies" },
+    { src: TokyoTalkies, alt: "Tokyo Talkies" },
     { src: vishudh, alt: "Vishudh" },
   ]
 
@@ -85,7 +92,7 @@ function HomePage() {
 <h1 className="text-center text-lg sm:text-xl font-medium tracking-widest my-6 hover:text-black hover:underline transition duration-300">
   SHOP BY BRANDS
 </h1>
-<CardCarousal images={images}/>
+<BrandCarousal images={images}/>
 
 
 {/* Top Collab */}
