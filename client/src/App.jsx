@@ -4,6 +4,7 @@ import HomePage from './Pages/HomePage.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 
+
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
     <Route path = "/" element = {<HomePage/>} ></Route>
     
    </Routes>
+   
     </>
   )
 }

@@ -30,6 +30,8 @@ const images = [
     { src: vishudh, alt: "Vishudh" },
   ]
 
+  import FetchData from "../Components/FetchData";
+
 function HomePage() {
     return (
         <HomeLayout>
@@ -114,6 +116,9 @@ function HomePage() {
     <button className="bg-[#A3A3A3] px-2 py-1 lg:px-4 lg:py-2 rounded text-black font-medium">HER</button>
   </div>
 </div>
+
+<FetchData/>
+
 
         </HomeLayout>
     )
