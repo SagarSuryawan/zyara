@@ -9,8 +9,8 @@ function FetchData() {
           "https://real-time-amazon-data.p.rapidapi.com/influencer-profile",
           {
             headers: {
-                'x-rapidapi-key': '751ff075d8msh2a6eb4439964a7dp1633c2jsnb9377ffa3edd',
-    'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
+                    'x-rapidapi-key': '751ff075d8msh2a6eb4439964a7dp1633c2jsnb9377ffa3edd',
+                    'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
             }
           }
         );

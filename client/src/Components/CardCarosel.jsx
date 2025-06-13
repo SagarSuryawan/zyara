@@ -4,15 +4,20 @@
   import "slick-carousel/slick/slick.css";
   import "slick-carousel/slick/slick-theme.css";
 
-  console.log(collabbrand)
+  
   function CardCarousal() {
 
     const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    // speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    arrows: false,
+
     responsive: [
       {
         breakpoint: 1024, // screens < 1024px
