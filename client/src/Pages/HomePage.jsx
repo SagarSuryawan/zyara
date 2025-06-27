@@ -1,36 +1,17 @@
 import HomeLayout from "../Layouts/HomeLayout"
-import { MdCurrencyRupee } from "react-icons/md";
-import BrandCarousal from "../Components/BrandCarousal";
-import CardCarousal from "../Components/CardCarosel";
+
 // import images for category
 import mensFashion from "../assets/homePage/MensFashion.jpg"
 import  womensFashion from "../assets/homePage/womensFashion.jpg"
-import  ethnicFashion from "../assets/homePage/ethnicFashion.jpg"
-import  jeans from "../assets/homePage/jeans.png"
-import  tshirt from "../assets/homePage/tshirt.jpg"
-import  shirts from "../assets/homePage/shirts.jpg"
-import  touser_pants from "../assets/homePage/touser_pants.jpg"
-import  shorts from "../assets/homePage/shorts.jpg"
-import  brands from "../assets/homePage/brands.jpg"
-import  newArrivals from "../assets/homePage/newArrivals.jpg"
-import  banner from "../assets/homePage/banner.jpg"
+import  Beauty from "../assets/homePage/beauty.jpg"
+import kitchenAccessories from "../assets/homePage/kitchen-accessories.jpg"
+import homeDecore from "../assets/homePage/homeDecore.jpg"
+import Watches from "../assets/homePage/Watches.jpg"
+import sportsAccessories from "../assets/homePage/sportsAccessories.jpg"
+import motarCycle from "../assets/homePage/motarCycle.jpg"
+import Electronics from "../assets/homePage/Electronics.jpg"
+import mobile_Tabs from "../assets/homePage/Mobiles & tabs.jpg"
 
-
-import Highlander from "../assets/BrandCarouselImages/Highlander.webp";
-import Hoop from "../assets/BrandCarouselImages/Hoop.webp";
-import ketch from "../assets/BrandCarouselImages/Ketch.webp";
-import TokyoTalkies from "../assets/BrandCarouselImages/TokyoTalkies.webp"
-import vishudh from "../assets/BrandCarouselImages/vishudh.webp";
-
-const images = [
-    { src: Highlander, alt: "Highlander" },
-    { src: Hoop, alt: "Hoop" },
-    { src: ketch, alt: "Ketch" },
-    { src: TokyoTalkies, alt: "Tokyo Talkies" },
-    { src: vishudh, alt: "Vishudh" },
-  ]
-
-  import FetchData from "../Components/FetchData";
 
 function HomePage() {
     return (
@@ -40,14 +21,14 @@ function HomePage() {
   {[
     { src: mensFashion, label: "Mens Fashion", dropdown: ["Shirts", "Pants", "Shoes"] },
     { src: womensFashion, label: "Womens Fashion" },
-    { src: ethnicFashion, label: "Ethnic Fashion" },
-    { src: tshirt, label: "T-shirt" },
-    { src: jeans, label: "Jeans" },
-    { src: shirts, label: "Shirts" },
-    { src: touser_pants, label: "Trousers & Pants" },
-    { src: shorts, label: "Shorts" },
-    { src: brands, label: "Brands" },
-    { src: newArrivals, label: "New Arrivals", dropdown: ["Shirts", "Pants", "Shoes"] },
+    { src: kitchenAccessories, label: "kitchenAccessories" },
+    { src: homeDecore, label: "homeDecore" },
+    { src: Electronics, label: "Electronics" },
+    { src: mobile_Tabs, label: "mobile_Tabs" },
+    { src: Watches, label: "Watches" },
+    { src: sportsAccessories, label: "sportsAccessories" },
+    { src: motarCycle, label: "motarCycle" },
+    { src: Beauty, label: "Beauty", dropdown: ["Shirts", "Pants", "Shoes"] },
   ].map((item, index) => (
     <div
       key={index}
@@ -76,48 +57,9 @@ function HomePage() {
   ))}
 </div>
 
-{/* Banner */}
-<div className="banner my-10 w-[95%] mx-auto">
-  <div className="relative cursor-pointer">
-    <img src={banner} alt="banner" className="w-full max-h-[450px] object-cover rounded-lg shadow-xl" />
-    <div className=" absolute top-10 left-24 bg-[#FFB5C0] p-4 rounded-md shadow-md max-w-xs md:w-[250px] md:h-[150px] lg:h-[200px] lg:w-[300px] lg:left-1/5 text-center p-5 md:top-1/4">
-      <h1 className="text-2xl lg:text-4xl font-bold text-[#330F14] text-center">GET EXTRA <br /> 10% OFF</h1>
-      <span className="text-[#66323A] text-[12px] text-center">ON SHOPPING FOR</span>
-      <div className=" flex items-center justify-center">
-        <MdCurrencyRupee className="text-[#66323A] text-xl sm:text-2xl" />
-        <span className="text-xl sm:text-3xl text-black font-semibold ml-1">2499</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Shop by Brands */}
-<h1 className="text-center text-lg sm:text-xl font-medium tracking-widest my-6 hover:text-black hover:underline transition duration-300">
-  SHOP BY BRANDS
-</h1>
-<BrandCarousal images={images}/>
 
 
-{/* Top Collab */}
-<h1 className="text-center text-lg sm:text-xl font-medium tracking-widest my-6 hover:text-black hover:underline transition duration-300">
-  TOP COLLAB
-</h1>
-<CardCarousal />
 
-{/* For Him and Her */}
-<div className="relative w-[95%] mx-auto mt-10">
-  <img
-    src="https://pictures.kartmax.in/live/original/0x0/sites/aPfvUDpPwMn1ZadNKhP7/theme/0092may(1)-e75baea8-13b0-4aa2-beae-abb89c8f7931.jpg"
-    alt="for him and her"
-    className="w-full rounded-md"
-  />
-  <div className="absolute bottom-2 left-1/2  -translate-x-1/2 flex gap-4">
-    <button className="bg-[#A3A3A3] px-2 py-1 lg:px-4 lg:py-2 rounded text-black font-medium">HIM</button>
-    <button className="bg-[#A3A3A3] px-2 py-1 lg:px-4 lg:py-2 rounded text-black font-medium">HER</button>
-  </div>
-</div>
-
-<FetchData/>
 
 
         </HomeLayout>
